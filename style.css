@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background: #080808;
+    color: white;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(images/hero-bg.jpg); */
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: white ;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    /* margin-top: 20%; */
+    font-size: 60px;
+}
+.header-text h1 span{
+    color: red;
+}
+
+#about{
+    padding: 80px 0;
+    color: #ababab;
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col1 img{
+    height: 500px;
+    width: 100%;
+    border-radius: 15px;
+
+}
+.col1{
+    flex-basis: 35%;
+}
+.col2{
+    flex-basis: 60%;
+}
+.hii{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px ;
+
+}
+.t-link{
+    margin-right: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.t-links::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px ;
+    transition: 0.5s;
+}
+/* .t-link.ac-link::after{
+    width: 50%;
+} */
+.tab-titles.ac-link::after {
+    width: 50%;
+    /* Other styles you may want to apply to the ::after pseudo-element */
+}
+
+.t-contents ul li{
+    list-style: none;
+    margin: 10px;
+}
+.t-contents ul li span{
+    color: red;
+    font-size: 14px ;
+}
+.t-contents{
+    display: none;
+}
+.t-contents.active-t{
+    display: block;
+
+}
+#Servicee{
+    padding: 30px 0;
+}
+/* .container h1{
+     margin-left: 600px;
+} */
+.skils{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    grid-gap: 50px;
+    margin-top: 50px;
+    transition: background 0.5s,transform 0.5s;
+}
+.skils div{
+    background-color: black;
+    padding: 40px;
+    font-size: large;
+    font-size: 400;
+    border-radius: 10px;
+
+}
+.skils div:hover{
+    background-color: red;
+    transform: translateY(-10px);
+}
+
+.contact{
+    background-color:#080808;
+    height: 600px;
+}
+.left{
+    flex-basis: 35%;
+}
+.right{
+    flex-basis: 60%;
+}
+.left p {
+    margin-left: 30px;
+    margin-top: 30px;
+    color: whitesmoke;
+}
+.left h1 {
+    margin-left: 30px;
+    color: whitesmoke;
+    margin-top: 30px;
+}
+.left div{
+    margin: 30px;
+}
+.social-icon a{
+    text-decoration: none;
+    font-size: 40px;
+    display: inline-block;
+    margin: 15px;
+    transition: transform 0.5s;
+
+}
+.social-icon a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.btn-btn2{
+    display: inline-block;
+    background-color: #ff004f;
+    transition: transform 0.5s;
+}
+.btn-btn2:hover{
+    display: inline-block;
+    background-color: #ff004f;
+    transform: translateY(-6px);
+}
+.right button{
+    width: 100px;
+    height: 40px;
+}
+.right input[type="text"],
+.right input[type="email"],
+.right textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+    background: #262626;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+.right{
+    margin-right: 55px;
+}
+#projects{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    grid-gap: 50px;
+    margin-top: 50px;
+    
+    
+}
+.work img{
+    height: 250px;
+    width: 100%;
+}
+.work {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+.work-description{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.work:hover .work-description{
+    visibility: visible;
+    opacity: 1;
+}
+.work img {
+    transition: transform 0.3s ease;
+}
+
+.work:hover img {
+    transform: translateY(-5px);
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+
+
+}
+/* Styling the submit button */
+.btn-btn2 {
+    background-color: #f50000; /* Red background color */
+    color: white; /* White text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Cursor style */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; 
+}
+
+.btn-btn2:hover {
+    background-color: #d40000; 
+}
+
+.btn-btn2:active {
+    background-color: #aa0000; 
+}
+
+@media only screen and (max-width:700px){
+    .col1 img{
+        width: 300%;
+    }
+    body {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        min-height: 100vh;
+    }
+    
+    .container {
+        grid-row: 2;
+    }
+    
+    .footer {
+        grid-row: 3;
+        background-color: #080808;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+
+}
+
+.t-link:hover::after {
+    width: 100%;
+    background-color: red;
+}
+
+
+.t-link.ac-link::after {
+    width: 100%;
+    background-color: red;
+}
+
+
+.t-link::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.t-link[data-tab="Education"].ac-link::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+#msg{
+    color: white;
+}
+#header div span {
+    color: red;
+    font-size: xx-large;
+}
