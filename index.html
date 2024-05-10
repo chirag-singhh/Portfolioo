@@ -215,7 +215,7 @@ for (var i = 0; i < tablinks.length; i++) {
               e.preventDefault()
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                 .then(response =>{
-                    msg.innerHTML="Message Sent Succesfully"
+                    msg.innerHTML="Message Sent Succesfully "
                     setTimeout(function(){
                         msg.innerHTML=""
                     },5000)
