@@ -373,3 +373,49 @@ footer p {
     color: red;
     font-size: xx-large;
 }
+
+@media (max-width: 700px){
+    #projects{
+        /* padding-right: 10%; */
+        margin-right: 50%;
+    }
+    #Servicee{
+        margin-right: 50%;
+    }
+   
+  }
+
+
+  @media (max-width: 600px) {
+    .contact .row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact .left, .contact .right {
+      width: 100%;
+      padding: 0;
+      text-align: center;
+    }
+  
+    .contact .right form {
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    /* Adjust icon size for phone screens */
+    .contact .social-icon a i {
+      font-size: 45px; /* Smaller size for phone screens */
+    }
+  
+    /* Display icons in 2 rows and 2 columns */
+    .contact .social-icon {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+  
+    .contact .social-icon a {
+      margin: 0; /* Remove individual margins to use grid gap */
+    }
+  }
